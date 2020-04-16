@@ -53,7 +53,110 @@ table {
     box-sizing: border-box;
 }
 
+@color: black;
+
 html, body {
-    height: 100%;
+	height: 100%;
+	background:rgb(251, 239, 223);
 }
 
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+
+	img{
+		margin:5px;
+	}
+	.title{
+		font-size: 4em;
+	}
+
+	nav{
+		display:flex;
+		width:50%;
+		justify-content: space-around;
+		align-items: flex-end;
+
+		a{
+			display: flex;
+			text-decoration: none;
+			border: 2px @color solid;
+			padding: 2px;
+		}
+	}
+}
+
+.button{
+	display: flex;
+	background: @color;
+	color:white;
+	width:80%;
+	margin: 10px auto;
+	padding:20px;
+	align-items: center;
+	flex-direction: column;
+
+	h3{
+		font-size: 3rem;
+	}
+	h4{
+		margin:10px;
+	}
+}
+
+.bio{
+	display: flex;
+	flex-direction: column;
+	border: 2px @color dotted;
+	width: 80%;
+	margin: 0 auto;
+	color: @color;
+	line-height: 2rem;
+	padding: 3em;
+
+	h2{
+		display: flex;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 1.5rem;
+	}
+
+	h3{
+		padding:5px;
+	}
+}
+
+.work{
+	margin: 2rem;
+
+	h3{
+		font-size: 3rem;
+	}
+	table{
+		border:1px black solid;
+
+		tr{
+			border:1px black solid;
+			line-height: 3em;
+			margin:5px;
+
+			th{
+				border: 1px black solid;
+				padding: 10px;
+			}
+
+			td{
+				border:1px black solid;
+				padding:5px;
+			}
+		}
+	}
+}
+footer{
+	display: flex;
+	justify-content: center;
+	padding:2em;
+	background: @color;
+	color: white;
+}
