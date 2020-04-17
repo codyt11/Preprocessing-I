@@ -137,8 +137,8 @@ body {
 }
 header {
   display: flex;
+  padding: 10px;
   justify-content: space-between;
-  padding: 20px;
 }
 header img {
   margin: 5px;
@@ -148,18 +148,23 @@ header .title {
 }
 header nav {
   display: flex;
+  padding: 10px;
+  justify-content: space-between;
   width: 50%;
-  justify-content: space-around;
   align-items: flex-end;
 }
 header nav a {
   display: flex;
+  padding: 10px;
+  justify-content: space-between;
   text-decoration: none;
   border: 2px black solid;
   padding: 2px;
 }
 .button {
   display: flex;
+  padding: 10px;
+  justify-content: space-between;
   background: black;
   color: white;
   width: 80%;
@@ -177,7 +182,7 @@ header nav a {
 .bio {
   display: flex;
   flex-direction: column;
-  border: 2px black dotted;
+  border: 1px solid black;
   width: 80%;
   margin: 0 auto;
   color: black;
@@ -203,20 +208,22 @@ header nav a {
   border: 1px black solid;
 }
 .work table tr {
-  border: 1px black solid;
+  border: 1px solid black;
   line-height: 3em;
   margin: 5px;
 }
 .work table tr th {
-  border: 1px black solid;
+  border: 1px solid black;
   padding: 10px;
 }
 .work table tr td {
-  border: 1px black solid;
+  border: 1px solid black;
   padding: 5px;
 }
 footer {
   display: flex;
+  padding: 10px;
+  justify-content: space-between;
   justify-content: center;
   padding: 2em;
   background: black;
