@@ -132,8 +132,30 @@ table {
 }
 html,
 body {
+  font-size: 2vw;
+  width: 100%;
   height: 100%;
   background: #fbefdf;
+}
+@media (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    background: whitesmoke;
+  }
+  html nav,
+  body nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+    background: teal;
+  }
 }
 header {
   display: flex;
@@ -141,10 +163,12 @@ header {
   justify-content: space-between;
 }
 header img {
-  margin: 5px;
+  width: 20%;
+  margin: 6px;
 }
 header .title {
-  font-size: 4em;
+  width: 30%;
+  font-size: 3rem;
 }
 header nav {
   display: flex;
@@ -160,6 +184,7 @@ header nav a {
   text-decoration: none;
   border: 2px black solid;
   padding: 2px;
+  margin: 1%;
 }
 .button {
   display: flex;
@@ -178,6 +203,9 @@ header nav a {
 }
 .button h4 {
   margin: 10px;
+}
+.button button {
+  font-size: 0.5rem;
 }
 .bio {
   display: flex;
@@ -199,10 +227,10 @@ header nav a {
   padding: 5px;
 }
 .work {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 .work h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .work table {
   border: 1px black solid;
@@ -228,4 +256,21 @@ footer {
   padding: 2em;
   background: black;
   color: white;
+}
+.media {
+  width: 800px;
+  height: 100%;
+  background: #fbefdf;
+}
+@media (max-width: 800px) {
+  .media {
+    width: 100%;
+    background: whitesmoke;
+  }
+}
+@media (max-width: 500px) {
+  .media {
+    width: 80%;
+    background: teal;
+  }
 }
